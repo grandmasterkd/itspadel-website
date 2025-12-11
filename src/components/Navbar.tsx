@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 w-full z-50 backdrop-blur-md bg-white/10">
-      <div className="container mx-auto px-4 py-6 flex justify-between items-center">
+      <div className="container mx-auto px-8 md:px-4 py-6 flex justify-between items-center">
         {/* Logo */}
         <Link to="/">
           <img src="/itspadel-logo-main.svg" alt="Itspadel Logo" className="h-8" />
