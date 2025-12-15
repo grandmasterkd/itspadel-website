@@ -1,15 +1,23 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
+import { PlusIcon } from '@heroicons/react/24/outline'
 import whatIsPadelData from '../../../languages/padelwhatispadel.json'
 
-interface TabContent {
-  racket?: { headline: string; paragraph: string };
-  shoes?: { headline: string; paragraph: string };
-  balls?: { headline: string; paragraph: string };
+interface GearContent {
+  racket: { headline: string; paragraph: string };
+  shoes: { headline: string; paragraph: string };
+  balls: { headline: string; paragraph: string };
+}
+
+interface Tab {
+  title: string;
+  image: string;
+  content: string | GearContent;
 }
 
 const HowToPlay = () => {
   const [activeTab, setActiveTab] = useState(0)
+  const [selectedChild, setSelectedChild] = useState<{headline: string, paragraph: string} | null>(null)
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -32,7 +40,7 @@ const HowToPlay = () => {
   }
 
   return (
-    <section className="py-20 px-8 md:px-16 lg:px-32 bg-gray-50">
+    <section className="py-20 px-8 md:px-16 lg:px-32">
       <div className="max-w-7xl mx-auto">
         <motion.div
           className="text-center mb-12"
@@ -44,58 +52,82 @@ const HowToPlay = () => {
           <h2 className="font-bison text-4xl md:text-5xl mb-4">{whatIsPadelData.howToPlay.headline}</h2>
         </motion.div>
 
-        <div className="flex flex-col lg:flex-row gap-8">
-          <motion.div
-            className="lg:w-1/3"
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-          >
-            {whatIsPadelData.howToPlay.tabs.map((tab: {title: string, content: string | TabContent}, index: number) => (
-              <motion.button
-                key={index}
-                className={`w-full text-left p-4 mb-2 rounded-lg font-inter font-medium transition-colors ${
-                  activeTab === index
-                    ? 'bg-[#009FF3] text-white'
-                    : 'bg-white text-gray-700 hover:bg-gray-100'
-                }`}
-                onClick={() => setActiveTab(index)}
-                variants={itemVariants}
-              >
-                {tab.title}
-              </motion.button>
-            ))}
-          </motion.div>
+        <motion.div
+          className="bg-[#EEEDED] rounded-full p-2 flex w-fit mx-auto mb-12"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          {whatIsPadelData.howToPlay.tabs.map((tab: Tab, index: number) => (
+            <motion.button
+              key={index}
+              className={`px-6 py-3 rounded-full font-inter font-medium ${
+                activeTab === index
+                  ? 'bg-white text-[#009FF3]'
+                  : 'text-[#777575] bg-transparent'
+              }`}
+              onClick={() => setActiveTab(index)}
+              variants={itemVariants}
+            >
+              {tab.title}
+            </motion.button>
+          ))}
+        </motion.div>
 
-          <motion.div
-            className="lg:w-2/3 bg-white p-8 rounded-2xl shadow-lg"
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <h3 className="font-bison text-2xl mb-6">{whatIsPadelData.howToPlay.tabs[activeTab].title}</h3>
-            {activeTab === 0 ? (
-              <div className="space-y-6">
-                <div>
-                  <h4 className="font-bison text-xl mb-2">{(whatIsPadelData.howToPlay.tabs[activeTab].content as TabContent).racket?.headline}</h4>
-                  <p className="font-inter text-gray-700">{(whatIsPadelData.howToPlay.tabs[activeTab].content as TabContent).racket?.paragraph}</p>
-                </div>
-                <div>
-                  <h4 className="font-bison text-xl mb-2">{(whatIsPadelData.howToPlay.tabs[activeTab].content as TabContent).shoes?.headline}</h4>
-                  <p className="font-inter text-gray-700">{(whatIsPadelData.howToPlay.tabs[activeTab].content as TabContent).shoes?.paragraph}</p>
-                </div>
-                <div>
-                  <h4 className="font-bison text-xl mb-2">{(whatIsPadelData.howToPlay.tabs[activeTab].content as TabContent).balls?.headline}</h4>
-                  <p className="font-inter text-gray-700">{(whatIsPadelData.howToPlay.tabs[activeTab].content as TabContent).balls?.paragraph}</p>
-                </div>
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <img
+            src={whatIsPadelData.howToPlay.tabs[activeTab].image}
+            alt={whatIsPadelData.howToPlay.tabs[activeTab].title}
+            className="w-full h-full object-cover rounded-3xl"
+          />
+          <div>
+            {(() => {
+              const tab = whatIsPadelData.howToPlay.tabs[activeTab]
+              const isGear = activeTab === 0
+              const content = isGear
+                ? selectedChild || {
+                    headline: tab.title,
+                    paragraph: Object.values(tab.content as GearContent).map((item) => item.paragraph).join(' ')
+                  }
+                : { headline: tab.title, paragraph: tab.content as string }
+              return (
+                <div className='h-full flex flex-col items-start justify-between' >
+                  <div>
+                  <h3 className="font-bison text-5xl mb-1">{content.headline}</h3>
+                  <p className="font-inter text-gray-700 text-base">{content.paragraph}</p>
               </div>
-            ) : (
-              <p className="font-inter text-gray-700 leading-relaxed">{whatIsPadelData.howToPlay.tabs[activeTab].content as string}</p>
-            )}
-          </motion.div>
-        </div>
+              <div className='w-full' >
+                  {isGear && (
+                    <div className="mt-6">
+                      {Object.values(tab.content as GearContent).map((child, idx: number) => (
+                        <div key={idx} className="border-b border-gray-200 last:border-b-0">
+                          <button
+                            onClick={() => setSelectedChild(child)}
+                            className="bg-transparent px-0 hover:none flex items-center gap-2 py-2 text-[#777575] w-full text-left"
+                          >
+                            <PlusIcon className="w-4 h-4" />
+                            {child.headline}
+                          </button>
+                        </div>
+                      ))}
+                  </div>
+                 
+                 
+                  )}
+                   </div>
+                </div>
+
+              )
+            })()}
+          </div>
+        </motion.div>
       </div>
     </section>
   )

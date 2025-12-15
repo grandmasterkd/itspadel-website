@@ -2,8 +2,9 @@ import Hero from '../components/Hero'
 import Mission from '../components/About/Mission'
 import Values from '../components/About/Values'
 import Team from '../components/About/Team'
-import Testimonials from '../components/About/Testimonials'
 import aboutData from '../../languages/padelabout.json'
+import Reviews from '@/components/Reviews'
+import Community from '@/components/Community'
 
 const About = () => {
   return (
@@ -18,7 +19,8 @@ const About = () => {
       <Mission />
       <Values />
       <Team />
-      <Testimonials />
+      <Reviews />
+      <Community />
     </div>
   )
 }

@@ -45,17 +45,17 @@ const Team = () => {
           {aboutData.team.map((member: {name: string, role: string, image: string}, index: number) => (
             <motion.div
               key={index}
-              className="bg-white rounded-2xl shadow-lg overflow-hidden"
+              className="bg-white rounded-2xl overflow-hidden relative w-full"
               variants={itemVariants}
             >
               <img
                 src={member.image}
                 alt={member.name}
-                className="w-full h-64 object-cover"
+                className=" w-full h-full object-cover"
               />
-              <div className="p-6">
-                <h3 className="font-bison text-xl mb-2">{member.name}</h3>
-                <p className="font-inter text-gray-600">{member.role}</p>
+              <div className="w-full absolute bottom-0 left-0 z-10 p-6 h-32 bg-gradient-to-t from-[#009FF3] to-black/0">
+                <h3 className="font-bison text-3xl mb-0 text-white">{member.name}</h3>
+                <p className="font-inter text-white">{member.role}</p>
               </div>
             </motion.div>
           ))}

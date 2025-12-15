@@ -1,8 +1,5 @@
 import Hero from '../components/Hero'
-import Description from '../components/Events/Description'
-import Companies from '../components/Events/Companies'
-import WhatMakesDifferent from '../components/Events/WhatMakesDifferent'
-import Experience from '../components/Events/Experience'
+import ContactForm from '../components/Events/ContactForm'
 import eventsData from '../../languages/padelevents.json'
 
 const Events = () => {
@@ -13,10 +10,7 @@ const Events = () => {
         headline={eventsData.hero.headline}
         paragraph={eventsData.hero.paragraph}
       />
-      <Description />
-      <Companies />
-      <WhatMakesDifferent />
-      <Experience />
+      <ContactForm />
     </div>
   )
 }
