@@ -1,0 +1,39 @@
+{
+  "hero": {
+    "headline": "NEW TO PADEL?",
+    "paragraph": "Where the rallies bring you in, but the people make you stay. Play, connect and feel part of something real.",
+    "ctaText": "SELECT YOUR CLUB",
+    "ctaLink": "/clubs",
+    "backgroundImage": "https://images.unsplash.com/photo-1617883861744-1197c9a3b90b?q=80&w=1740&auto=format&fit=crop"
+  },
+  "howToPlay": {
+    "headline": "HOW TO PLAY PADEL",
+    "tabs": ["Gear", "Rules", "Score", "Serve", "Glass Walls"]
+  },
+  "gear": {
+    "headline": "PADEL RACKET",
+    "paragraph": "A padel racket is similar to a tennis racket, but typically lacks a string handle. A solid frame with small, even sized air holes are the main characteristics of a padel racket.",
+    "features": ["COURT SHOES", "PADEL BALLS"],
+    "image": "https://images.unsplash.com/photo-1617883861744-1197c9a3b90b?q=80&w=1740&auto=format&fit=crop"
+  },
+  "padelVsTennis": {
+    "headline": "PADEL VS TENNIS",
+    "paragraph": "Discover Padel's unique game play that sets it apart from tennis. Padel is played in doubles format, on a glass-walled court that is significantly smaller than a tennis court. That smaller court and walls for the balls to bounce off adds an entirely new dimension to the sport.",
+    "ctaText": "SEE CLUBS",
+    "ctaLink": "/clubs",
+    "image": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?q=80&w=1740&auto=format&fit=crop"
+  },
+  "privateCoaching": {
+    "headline": "PRIVATE COACHING",
+    "paragraph": "Our expert coaches are committed to tailoring lessons specifically to your needs and abilities. Whether you're new to the sport, we have experienced coaches ready to refine your technique or guide you through the foundations.",
+    "ctaText": "ENQUIRE TODAY",
+    "ctaLink": "/coaching",
+    "image": "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?q=80&w=1740&auto=format&fit=crop"
+  },
+  "playtomic": {
+    "headline": "BOOK YOUR COURT BY DOWNLOADING THE PLAYTOMIC APP",
+    "paragraph": "Start playing today by downloading Playtomic.",
+    "ctaText": "DOWNLOAD PLAYTOMIC",
+    "ctaLink": "https://app.playtomic.io"
+  }
+}

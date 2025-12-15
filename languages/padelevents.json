@@ -1,0 +1,30 @@
+{
+  "hero": {
+    "headline": "READY FOR YOUR NEXT PADEL EVENT?",
+    "paragraph": "Where the rallies bring you in, but the people make you stay. Play, connect and feel part of something real.",
+    "ctaText": "ENQUIRE TODAY",
+    "ctaLink": "#event-form",
+    "backgroundImage": "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?q=80&w=1740&auto=format&fit=crop"
+  },
+  "eventForm": {
+    "headline": "START YOUR NEXT EVENT WITH IT'S PADEL TODAY!",
+    "paragraph": "We can organize the perfect Corporate or Charity sporting events, private parties or racing driver experience days. We'll make it a day to remember with all hospitality options available."
+  },
+  "trustedBy": {
+    "headline": "TRUSTED BY TOP PLAYERS"
+  },
+  "whatSets": {
+    "headline": "WHAT SETS IT'S PADEL APART",
+    "paragraph": "Hosting a fun-packed and adrenaline-driven day that captures elements of tennis and squash, we can offer such an easy to pick up sport in a world class facility. It's extremely easy to pick up! From our state-of-the-art courts to expert event planning, we create unforgettable experiences.",
+    "ctaText": "ENQUIRE TODAY",
+    "ctaLink": "#event-form",
+    "image": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?q=80&w=1740&auto=format&fit=crop"
+  },
+  "facilities": {
+    "headline": "EXPERIENCE THE BEST FACILITIES WITH IT'S PADEL",
+    "paragraph": "Hosting a fun-packed and adrenaline-driven day that captures elements of tennis and squash, we can offer such an easy to pick up sport. Our With two clubs fully already in the North West and more on the way, Pure Padel will make sure you have bringing the world's fastest growing sport to your next corporate or private event!",
+    "ctaText": "ENQUIRE TODAY",
+    "ctaLink": "#event-form",
+    "image": "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?q=80&w=1740&auto=format&fit=crop"
+  }
+}

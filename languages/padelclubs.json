@@ -1,0 +1,29 @@
+{
+  "hero": {
+    "headline": "FIND YOUR CLUB",
+    "paragraph": "Discover our world-class padel facilities across the UK. Each club offers premium courts, expert coaching, and a vibrant community.",
+    "ctaText": "BOOK A COURT",
+    "ctaLink": "https://app.playtomic.io",
+    "backgroundImage": "https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?q=80&w=1740&auto=format&fit=crop"
+  },
+  "clubs": [
+    {
+      "name": "NOTTINGHAM",
+      "location": "Nottingham City Centre",
+      "description": "Our flagship club featuring 6 premium courts, pro shop, and cafe.",
+      "image": "https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?q=80&w=1740&auto=format&fit=crop"
+    },
+    {
+      "name": "BIRMINGHAM",
+      "location": "Birmingham Central",
+      "description": "State-of-the-art facility with 4 courts and expert coaching staff.",
+      "image": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?q=80&w=1740&auto=format&fit=crop"
+    },
+    {
+      "name": "LIVERPOOL",
+      "location": "Liverpool Docks",
+      "description": "Waterfront location with 5 courts and premium amenities.",
+      "image": "https://images.unsplash.com/photo-1617883861744-1197c9a3b90b?q=80&w=1740&auto=format&fit=crop"
+    }
+  ]
+}

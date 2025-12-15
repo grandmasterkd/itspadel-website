@@ -1,0 +1,21 @@
+{
+  "hero": {
+    "headline": "VALUES, THE IT'S PADEL WAY",
+    "paragraph": "Padel is fast paced and addictive racket sport that combines elements of tennis and squash. With a smaller court and walls, its extremely easy to pick up! Find out more about why and how we do it to bring amazing padel experiences.",
+    "ctaText": "HOW TO PLAY",
+    "ctaLink": "/what-is-padel",
+    "backgroundImage": "https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?q=80&w=1740&auto=format&fit=crop"
+  },
+  "mission": {
+    "headline": "THE IT'S PADEL MISSION",
+    "paragraph": "Our mission is to bring the world's fastest growing sport to communities across the UK. We believe in creating spaces where people can play, connect, and feel part of something real. Through world-class facilities and expert coaching, we're building a vibrant padel community.",
+    "image": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?q=80&w=1740&auto=format&fit=crop"
+  },
+  "values": {
+    "headline": "VALUES, THE IT'S PADEL WAY",
+    "paragraph": "Padel is a fast paced and addictive racket sport that combines elements of tennis and squash. With a smaller court and walls, it's extremely easy to pick up! We believe in community, excellence, and making padel accessible to everyone. Our values drive everything we do.",
+    "ctaText": "HOW TO PLAY",
+    "ctaLink": "/what-is-padel",
+    "image": "https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?q=80&w=1740&auto=format&fit=crop"
+  }
+}

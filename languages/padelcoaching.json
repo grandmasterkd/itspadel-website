@@ -1,0 +1,19 @@
+{
+  "hero": {
+    "headline": "ELEVATE YOUR GAME",
+    "paragraph": "Our expert coaches offer personalised training at all our clubs to help elevate your padel game to the next level!",
+    "ctaText": "ENQUIRE NOW",
+    "ctaLink": "#coaching-form",
+    "backgroundImage": "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?q=80&w=1740&auto=format&fit=crop"
+  },
+  "privateCoaching": {
+    "headline": "PRIVATE COACHING",
+    "paragraph": "The private coaching at It's Padel has really sharpened my game. The coaches are patient, knowledgeable, and give you personalised guidance every session.",
+    "image": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?q=80&w=1740&auto=format&fit=crop"
+  },
+  "groupSessions": {
+    "headline": "GROUP SESSIONS",
+    "paragraph": "Join our group coaching sessions and learn alongside other players. Perfect for beginners and intermediate players looking to improve in a social environment.",
+    "image": "https://images.unsplash.com/photo-1617883861744-1197c9a3b90b?q=80&w=1740&auto=format&fit=crop"
+  }
+}

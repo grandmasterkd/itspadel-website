@@ -1,0 +1,136 @@
+{
+  "hero": {
+    "headline": "WE ARE IT'S PADEL",
+    "paragraph": "Where the rallies bring you in, but the people make you stay. Play, connect and feel part of something real.",
+    "ctaText": "SELECT YOUR CLUB",
+    "ctaLink": "/clubs",
+    "backgroundImage": "/itspadel-homehero-bg.webp"
+  },
+  "downloadPadel": {
+    "headline": "THE IT'S PADEL MISSION",
+    "paragraph": "Book your court by downloading the Playtomic app. Start playing today by downloading Playtomic. Experience the excitement of padel throughout the UK with world-class facilities, expert coaching, and a vibrant community at It's Padel.",
+    "ctaText": "FIND A CLUB",
+    "ctaLink": "/clubs",
+    "image": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?q=80&w=1740&auto=format&fit=crop"
+  },
+  "findYourClub": {
+    "headline": "FIND YOUR CLUB",
+    "clubs": [
+      {
+        "name": "NOTTINGHAM",
+        "image": "https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?q=80&w=1740&auto=format&fit=crop"
+      },
+      {
+        "name": "BIRMINGHAM",
+        "image": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?q=80&w=1740&auto=format&fit=crop"
+      },
+      {
+        "name": "LIVERPOOL",
+        "image": "https://images.unsplash.com/photo-1617883861744-1197c9a3b90b?q=80&w=1740&auto=format&fit=crop"
+      },
+      {
+        "name": "MANCHESTER",
+        "image": "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?q=80&w=1740&auto=format&fit=crop"
+      },
+      {
+        "name": "LEEDS",
+        "image": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?q=80&w=1740&auto=format&fit=crop"
+      }
+    ]
+  },
+  "fastestGrowing": {
+    "headline": "FASTEST GROWING SPORT IN THE WORLD",
+    "paragraph": "Padel is a fast-paced and addictive racket sport that combines elements of tennis and squash. With a smaller court and walls, it's extremely easy to pick up! With two clubs built already in the North West and more on the way, Pure Padel will make sure you have bringing the world's fastest growing sport to your doorstep!",
+    "cta1Text": "LEARN MORE",
+    "cta1Link": "/what-is-padel",
+    "cta2Text": "VIEW CLUBS",
+    "cta2Link": "/clubs",
+    "image": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?q=80&w=1740&auto=format&fit=crop"
+  },
+  "services": [
+    {
+      "headline": "EVENTS",
+      "paragraph": "Invite your colleagues and clients to experience the fastest growing sport in a unique and private setting.",
+      "ctaText": "ENQUIRE NOW",
+      "ctaLink": "/events",
+      "image": "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?q=80&w=1740&auto=format&fit=crop"
+    },
+    {
+      "headline": "COACHING",
+      "paragraph": "Our expert coaches offer personalised training at all our clubs to help elevate your padel game to the next level!",
+      "ctaText": "ENQUIRE NOW",
+      "ctaLink": "/coaching",
+      "image": "https://images.unsplash.com/photo-1617883861744-1197c9a3b90b?q=80&w=1740&auto=format&fit=crop"
+    },
+    {
+      "headline": "JOIN THE CLUB",
+      "paragraph": "We operate social clubs where you can meet like-minded players, all with a common interest in this exhilarating sport.",
+      "ctaText": "ENQUIRE NOW",
+      "ctaLink": "/clubs",
+      "image": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?q=80&w=1740&auto=format&fit=crop"
+    },
+    {
+      "headline": "LIFESTYLE",
+      "paragraph": "Experience the padel lifestyle with premium facilities, modern amenities, and a vibrant community atmosphere.",
+      "ctaText": "ENQUIRE NOW",
+      "ctaLink": "/about",
+      "image": "https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?q=80&w=1740&auto=format&fit=crop"
+    }
+  ],
+  "teamSection": {
+    "headline": "MEET OUR TEAM",
+    "team": [
+      {
+        "name": "NATHAN SYMONS",
+        "role": "Head Coach & Founder",
+        "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1740&auto=format&fit=crop"
+      },
+      {
+        "name": "ANGELA MARTINS",
+        "role": "Operations Director",
+        "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1740&auto=format&fit=crop"
+      },
+      {
+        "name": "FREDERICK BENSON",
+        "role": "Community Manager",
+        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1740&auto=format&fit=crop"
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "It's Padel facilities are world-class! From the modern locker rooms to the spacious courts, everything is designed for a fantastic padel experience. I couldn't ask for a better place to play!",
+    "author": "Aiden Baker"
+  },
+  "community": {
+    "headline": "CONNECT WITH OUR ONLINE COMMUNITY",
+    "subheadline": "Follow us on social media"
+  },
+  "faq": {
+    "headline": "FREQUENTLY ASKED QUESTIONS",
+    "subheadline": "Still have questions? All our clubs are here to help",
+    "ctaText": "VIEW CLUBS",
+    "ctaLink": "/clubs",
+    "questions": [
+      {
+        "question": "How do I book a court?",
+        "answer": "All court bookings are made through the Playtomic app. Download the app and find It's Padel to schedule your court time."
+      },
+      {
+        "question": "What is the cancellation policy?",
+        "answer": "You can cancel your booking more than 24 hrs before your game for a full refund."
+      },
+      {
+        "question": "How do I book a private coaching?",
+        "answer": "Please visit our coaching page and fill out the form. One of our coaches will get in touch with you."
+      },
+      {
+        "question": "Can I rent equipment?",
+        "answer": "Yes, we have rental rackets available in the shop at all our clubs."
+      },
+      {
+        "question": "Do you provide balls?",
+        "answer": "Balls can only be purchased from the club, not rented. If you book a course or a private lesson however, we will provide you with balls."
+      }
+    ]
+  }
+}
