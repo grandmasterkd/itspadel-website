@@ -5,6 +5,7 @@ import FastestGrowing from '../components/Home/FastestGrowing'
 import Services from '../components/Home/Services'
 import Reviews from '../components/Reviews'
 import Community from '../components/Community'
+import FAQ from '../components/FAQ'
 import homeData from '../../languages/padelhome.json'
 
 const Home = () => {
@@ -23,9 +24,10 @@ const Home = () => {
       <FindYourClub />
       <FastestGrowing />
       <Services />
-      <Reviews />
-      <Community />
-    </div>
+       <Reviews />
+       <Community />
+       <FAQ />
+     </div>
   )
 }
 
