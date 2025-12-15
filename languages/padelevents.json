@@ -1,30 +1,25 @@
 {
   "hero": {
-    "headline": "READY FOR YOUR NEXT PADEL EVENT?",
-    "paragraph": "Where the rallies bring you in, but the people make you stay. Play, connect and feel part of something real.",
-    "ctaText": "ENQUIRE TODAY",
-    "ctaLink": "#event-form",
+    "headline": "Your next private event",
+    "paragraph": "Host your next private event at the UK's number 1 padel club",
     "backgroundImage": "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?q=80&w=1740&auto=format&fit=crop"
   },
-  "eventForm": {
-    "headline": "START YOUR NEXT EVENT WITH IT'S PADEL TODAY!",
-    "paragraph": "We can organize the perfect Corporate or Charity sporting events, private parties or racing driver experience days. We'll make it a day to remember with all hospitality options available."
+  "description": {
+    "paragraph": "At Pure Padel, we love events! Whether it's Christmas, birthdays, corporate, private, or going big with a full venue hire, we create bespoke experiences that are different."
   },
-  "trustedBy": {
-    "headline": "TRUSTED BY TOP PLAYERS"
+  "companies": [
+    "JMW", "Kuits", "LDC", "Pretty", "Together", "TPA", "New Balance", "K3", "EY", "Match Room", "City", "Sky", "MG", "Capra", "Carmex", "Squire", "Francis", "Amazon", "Sterling", "Deloitte"
+  ],
+  "whatMakesDifferent": {
+    "headline": "What makes our corporate events different",
+    "paragraph": "Here at Pure Padel, our bespoke events give you the perfect opportunity to invite your colleagues and clients to experience the fastest growing sport in a unique and private setting, whatever the occasion."
   },
-  "whatSets": {
-    "headline": "WHAT SETS IT'S PADEL APART",
-    "paragraph": "Hosting a fun-packed and adrenaline-driven day that captures elements of tennis and squash, we can offer such an easy to pick up sport in a world class facility. It's extremely easy to pick up! From our state-of-the-art courts to expert event planning, we create unforgettable experiences.",
-    "ctaText": "ENQUIRE TODAY",
-    "ctaLink": "#event-form",
-    "image": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?q=80&w=1740&auto=format&fit=crop"
+  "experience": {
+    "headline": "Experience the best Padel facilities in the UK",
+    "paragraph": "If you're planning a corporate event or private hire, Pure Padel is built for it. Our clubs combine the best padel facilities in the UK with everything you need for a great day — showers, changing rooms, breakout spaces, and relaxed social areas. Whether it's a team-building session, a company tournament, or a client networking day, we make it easy to mix sport, socialising, and down-time. With great food and drink options, flexible layouts, and an atmosphere that's always buzzing, Pure Padel is the perfect place to bring people together."
   },
-  "facilities": {
-    "headline": "EXPERIENCE THE BEST FACILITIES WITH IT'S PADEL",
-    "paragraph": "Hosting a fun-packed and adrenaline-driven day that captures elements of tennis and squash, we can offer such an easy to pick up sport. Our With two clubs fully already in the North West and more on the way, Pure Padel will make sure you have bringing the world's fastest growing sport to your next corporate or private event!",
-    "ctaText": "ENQUIRE TODAY",
-    "ctaLink": "#event-form",
-    "image": "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?q=80&w=1740&auto=format&fit=crop"
+  "cta": {
+    "text": "Enquire Today",
+    "link": "#corporateform"
   }
 }
