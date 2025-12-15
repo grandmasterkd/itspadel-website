@@ -1,70 +1,117 @@
-import { motion } from 'framer-motion'
 import communityData from '../../languages/padelcommunity.json'
 
-const Community = () => {
 
 
-  const transforms = [
-    'translate(-15rem, 7.3rem) rotate(-21deg) scale(0.7756)',
-    'translate(-11rem, 4rem) rotate(-14deg) scale(0.8498)',
-    'translate(-6rem, 1.3rem) rotate(-7deg) scale(0.9346)',
-    'translate(0rem)',
-    'translate(6rem, 1.3rem) rotate(7deg) scale(0.9346)',
-    'translate(11rem, 4rem) rotate(14deg) scale(0.8498)',
-    'translate(15rem, 7.3rem) rotate(21deg) scale(0.7756)'
-  ]
-
-  const zIndexes = [1, 2, 3, 10, 3, 2, 1]
-
+export default function Community() {
   return (
-    <section className="py-20 px-8 md:px-16 lg:px-32">
+    <section className="py-24 px-8 md:px-16 lg:px-32 overflow-visible">
       <div className="max-w-7xl mx-auto">
-        <motion.div
-          className="text-center mb-12"
-          initial={{ opacity: 0, y: -30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <h2 className="font-bison text-4xl md:text-5xl mb-4">CONNECT WITH OUR ONLINE<br />COMMUNITY</h2>
-          <p className="font-inter text-lg text-gray-600">Follow us on social media</p>
-        </motion.div>
 
-        <div className="relative h-96 flex justify-center items-center">
-            {communityData.map((item: {image: string, alt: string}, index: number) => (
-            <motion.div
-              key={index}
-              className="absolute w-40 h-40 rounded-lg overflow-hidden shadow-lg"
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              style={{
-                transform: transforms[index],
-                zIndex: zIndexes[index],
-              }}
+        {/* Heading */}
+        <div className="w-full mx-auto grid place-items-center text-center mb-16">
+          <h2 className="font-bison max-w-[500px] text-4xl md:text-6xl leading-tight">
+            {communityData.headline}
+          </h2>
+        </div>
+
+        {/* Cards */}
+        <div className="relative w-full h-[40rem] mx-auto flex justify-center">
+          <div
+            className="absolute w-[22rem] h-[28rem] rounded-[2rem] overflow-hidden shadow-lg"
+            style={{
+              transform: 'translate(-20rem, 7.3rem) rotate(-28deg) scale(0.7756)',
+              zIndex: 1,
+            }}
+          >
+            <img
+              src={communityData.images[0].image}
+              alt={communityData.images[0].alt}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div
+            className="absolute w-[22rem] h-[28rem] rounded-[2rem] overflow-hidden shadow-lg"
+            style={{
+              transform: 'translate(-11rem, 4rem) rotate(-14deg) scale(0.8498)',
+              zIndex: 2,
+            }}
+          >
+            <img
+              src={communityData.images[1].image}
+              alt={communityData.images[1].alt}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div
+            className="absolute w-[22rem] h-[28rem] rounded-[2rem] overflow-hidden shadow-lg"
+            style={{
+              transform: 'translate(0rem, 0rem) scale(0.98)',
+              zIndex: 20,
+            }}
+          >
+            <img
+              src={communityData.images[2].image}
+              alt={communityData.images[2].alt}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div
+            className="absolute w-[22rem] h-[28rem] rounded-[2rem] overflow-hidden shadow-lg"
+            style={{
+              transform: 'translate(20rem, 7.3rem) rotate(28deg) scale(0.7756)',
+              zIndex: 1,
+            }}
+          >
+            <img
+              src={communityData.images[3].image}
+              alt={communityData.images[3].alt}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div
+            className="absolute w-[22rem] h-[28rem] rounded-[2rem] overflow-hidden shadow-lg"
+            style={{
+              transform: 'translate(11rem, 4rem) rotate(14deg) scale(0.8498)',
+              zIndex: 2,
+            }}
+          >
+            <img
+              src={communityData.images[5].image}
+              alt={communityData.images[5].alt}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+
+        {/* Intro */}
+        <p className="text-center mt-0 mb-0 font-inter text-lg">
+          Follow us on social media
+        </p>
+
+        {/* Links */}
+        <div className="flex justify-center gap-8 text-lg font-inter">
+          {[
+            { label: 'tiktok', href: 'https://www.tiktok.com/@padel' },
+            { label: 'instagram', href: 'https://www.instagram.com/padel' },
+            { label: 'youtube', href: 'https://www.youtube.com/padel' },
+            { label: 'twitch', href: 'https://www.twitch.tv/padel' },
+          ].map(link => (
+            <a
+              key={link.label}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative group"
             >
-              <img
-                src={item.image}
-                alt={item.alt}
-                className="w-full h-full object-cover"
-              />
-            </motion.div>
+              <span className="transition-colors group-hover:text-[#009FF3]">
+                {link.label}
+              </span>
+              <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#009FF3] transition-all group-hover:w-full" />
+            </a>
           ))}
-         </div>
+        </div>
 
-         <div className="text-center mt-8">
-           <p className="font-inter text-lg text-gray-600 mb-4">Follow us on social media</p>
-           <div className="flex justify-center space-x-6">
-             <a href="https://www.instagram.com/padel" target="_blank" rel="noopener noreferrer" className="text-[#009FF3] hover:text-blue-700 font-inter">Instagram</a>
-             <a href="https://www.tiktok.com/@padel" target="_blank" rel="noopener noreferrer" className="text-[#009FF3] hover:text-blue-700 font-inter">TikTok</a>
-             <a href="https://www.youtube.com/padel" target="_blank" rel="noopener noreferrer" className="text-[#009FF3] hover:text-blue-700 font-inter">YouTube</a>
-             <a href="https://www.twitch.tv/padel" target="_blank" rel="noopener noreferrer" className="text-[#009FF3] hover:text-blue-700 font-inter">Twitch</a>
-           </div>
-         </div>
-       </div>
-     </section>
-   )
- }
-
-export default Community
+      </div>
+    </section>
+  )
+}
