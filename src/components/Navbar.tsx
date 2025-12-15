@@ -26,14 +26,14 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
           {navItems.map((item) => (
-            <Link key={item.path} to={item.path} className={` ${ item.name === "Clubs" ? "bg-[#009FF3] px-3 py-1 text-white" : "text-white" } font-inter tracking-tight hover:text-blue-600`}>
+            <Link key={item.path} to={item.path} className={` ${ item.name === "Clubs" ? "bg-[#009FF3] px-3 py-1 text-white" : "text-white mix-blend-difference" } font-inter tracking-tight hover:text-blue-600 transition-all duration-300 ease-linear cursor-pointer`}>
               {item.name}
             </Link>
           ))}
         </div>
 
         {/* Mobile Menu Button */}
-        <button onClick={toggleMenu} className="bg-transparent md:hidden">
+        <button onClick={toggleMenu} className="bg-transparent md:hidden mix-blend-difference">
           {isOpen ? <XMarkIcon className="size-8 text-white" /> : <Bars3Icon className="size-8 text-white" />}
         </button>
       </div>
@@ -43,9 +43,9 @@ const Navbar = () => {
         <div className="md:hidden bg-white/10 backdrop-blur-sm">
           <div className="px-8 py-4">
             {navItems.map((item) => (
-              <Link key={item.path} to={item.path} className="font-inter tracking-tight hover:text-blue-600" onClick={toggleMenu}>
-               <span className='flex flex-col items-start gap-y-8 text-white' >{item.name}</span> 
-              </Link>
+               <Link key={item.path} to={item.path} className="font-inter tracking-tight hover:text-blue-600 mix-blend-difference" onClick={toggleMenu}>
+                <span className='flex flex-col items-start gap-y-8 text-white' >{item.name}</span>
+               </Link>
             ))}
           </div>
         </div>
