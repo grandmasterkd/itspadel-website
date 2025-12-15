@@ -1,14 +1,23 @@
-import { motion } from 'framer-motion'
+import Hero from '../components/Hero'
+import HowToPlay from '../components/WhatIsPadel/HowToPlay'
+import PadelVsTennis from '../components/WhatIsPadel/PadelVsTennis'
+import PrivateCoaching from '../components/WhatIsPadel/PrivateCoaching'
+import Playtomic from '../components/WhatIsPadel/Playtomic'
+import whatIsPadelData from '../../languages/padelwhatispadel.json'
 
 const WhatIsPadel = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-    >
-      <h1>What is Padel Page</h1>
-    </motion.div>
+    <div>
+      <Hero
+        image={whatIsPadelData.hero.backgroundImage}
+        headline={whatIsPadelData.hero.headline}
+        paragraph={whatIsPadelData.hero.paragraph}
+      />
+      <HowToPlay />
+      <PadelVsTennis />
+      <PrivateCoaching />
+      <Playtomic />
+    </div>
   )
 }
 

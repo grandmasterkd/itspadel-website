@@ -24,7 +24,7 @@ const FastestGrowing = () => {
   }
 
   return (
-    <section className="py-20 px-8 md:px-16 lg:px-32 bg-gray-50">
+    <section className="py-20 px-8 md:px-16 lg:px-32">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div

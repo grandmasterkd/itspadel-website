@@ -24,7 +24,7 @@ const Services = () => {
               <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors"></div>
               <div className="absolute bottom-6 left-6 text-white">
                 <h3 className="font-bison text-2xl mb-2">{service.headline}</h3>
-                <p className="font-inter text-sm mb-4 max-w-xs text-white">{service.paragraph}</p>
+                <p className="font-inter text-sm mb-4 max-w-md text-white">{service.paragraph}</p>
                 <Link to={service.ctaLink} className="inline-flex items-center bg-white text-[#009FF3] px-4 py-2 font-inter font-medium hover:bg-gray-100 transition-colors">
                   {service.ctaText} <ChevronRightIcon className="w-4 h-4 ml-2" />
                 </Link>
@@ -47,7 +47,7 @@ const Services = () => {
               <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors"></div>
               <div className="absolute bottom-6 left-6 text-white">
                 <h3 className="font-bison text-2xl mb-2">{service.headline}</h3>
-                <p className="font-inter text-sm mb-4 max-w-xs text-white">{service.paragraph}</p>
+                <p className="font-inter text-sm mb-4 max-w-md text-white">{service.paragraph}</p>
                 <Link to={service.ctaLink} className="inline-flex items-center bg-white text-[#009FF3] px-4 py-2 font-inter font-medium hover:bg-gray-100 transition-colors">
                   {service.ctaText} <ChevronRightIcon className="w-4 h-4 ml-2" />
                 </Link>

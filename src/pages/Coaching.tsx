@@ -1,14 +1,18 @@
-import { motion } from 'framer-motion'
+import Hero from '../components/Hero'
+import Clubs from '../components/Coaching/Clubs'
+import Playtomic from '../components/Coaching/Playtomic'
+import coachingData from '../../languages/padelcoaching.json'
 
 const Coaching = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-    >
-      <h1>Coaching Page</h1>
-    </motion.div>
+    <div>
+      <Hero
+        image={coachingData.hero.backgroundImage}
+        headline={coachingData.hero.headline}
+      />
+      <Clubs />
+      <Playtomic />
+    </div>
   )
 }
 

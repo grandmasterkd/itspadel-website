@@ -1,14 +1,25 @@
-import { motion } from 'framer-motion'
+import Hero from '../components/Hero'
+import Mission from '../components/About/Mission'
+import Values from '../components/About/Values'
+import Team from '../components/About/Team'
+import Testimonials from '../components/About/Testimonials'
+import aboutData from '../../languages/padelabout.json'
 
 const About = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-    >
-      <h1>About Page</h1>
-    </motion.div>
+    <div>
+      <Hero
+        image={aboutData.hero.backgroundImage}
+        headline={aboutData.hero.headline}
+        paragraph={aboutData.hero.paragraph}
+        ctaText={aboutData.hero.ctaText}
+        ctaLink={aboutData.hero.ctaLink}
+      />
+      <Mission />
+      <Values />
+      <Team />
+      <Testimonials />
+    </div>
   )
 }
 

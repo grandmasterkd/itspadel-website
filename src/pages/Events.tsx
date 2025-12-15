@@ -1,14 +1,23 @@
-import { motion } from 'framer-motion'
+import Hero from '../components/Hero'
+import Description from '../components/Events/Description'
+import Companies from '../components/Events/Companies'
+import WhatMakesDifferent from '../components/Events/WhatMakesDifferent'
+import Experience from '../components/Events/Experience'
+import eventsData from '../../languages/padelevents.json'
 
 const Events = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-    >
-      <h1>Events Page</h1>
-    </motion.div>
+    <div>
+      <Hero
+        image={eventsData.hero.backgroundImage}
+        headline={eventsData.hero.headline}
+        paragraph={eventsData.hero.paragraph}
+      />
+      <Description />
+      <Companies />
+      <WhatMakesDifferent />
+      <Experience />
+    </div>
   )
 }
 

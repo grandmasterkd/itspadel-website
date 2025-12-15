@@ -3,6 +3,8 @@ import DownloadPadel from '../components/Home/DownloadPadel'
 import FindYourClub from '../components/Home/FindYourClub'
 import FastestGrowing from '../components/Home/FastestGrowing'
 import Services from '../components/Home/Services'
+import Reviews from '../components/Reviews'
+import Community from '../components/Community'
 import homeData from '../../languages/padelhome.json'
 
 const Home = () => {
@@ -21,6 +23,8 @@ const Home = () => {
       <FindYourClub />
       <FastestGrowing />
       <Services />
+      <Reviews />
+      <Community />
     </div>
   )
 }
