@@ -4,9 +4,9 @@ import { ChevronRightIcon } from '@heroicons/react/24/outline'
 
 const FindYourClub = () => {
   const clubs = [
-    { name: 'Alderley Park', image: 'https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?q=80&w=1740&auto=format&fit=crop' },
-    { name: 'Manchester', image: 'https://images.unsplash.com/photo-1554068865-24cecd4e34b8?q=80&w=1740&auto=format&fit=crop' },
-    { name: 'Stockport', image: 'https://images.unsplash.com/photo-1617883861744-1197c9a3b90b?q=80&w=1740&auto=format&fit=crop' },
+    { name: 'Nottingham', image: '/locations/itspadel-mock-location-nottingham.webp' },
+    { name: 'Birmingham', image: '/locations/itspadel-mock-location-birmingham.webp' },
+    { name: 'Lightwater', image: '/locations/itspadel-mock-location-lightwater.webp' },
     { name: 'North Leeds', image: 'https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?q=80&w=1740&auto=format&fit=crop' },
     { name: 'Darlington', image: 'https://images.unsplash.com/photo-1554068865-24cecd4e34b8?q=80&w=1740&auto=format&fit=crop' }
   ]
@@ -44,10 +44,10 @@ const FindYourClub = () => {
                 <img src={club.image} alt={club.name} className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 text-white">
-                  <h3 className="font-bison text-2xl md:text-3xl mb-2">{club.name}</h3>
-                  <div className="flex items-center font-inter text-base md:text-lg">
+                  <h3 className="font-bison text-2xl md:text-3xl mb-1">{club.name}</h3>
+                  <p className="flex items-center font-inter text-base text-white">
                     View Club <ChevronRightIcon className="w-4 h-4 md:w-5 md:h-5 ml-2" />
-                  </div>
+                  </p>
                 </div>
               </div>
             </div>

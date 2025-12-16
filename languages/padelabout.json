@@ -1,53 +1,43 @@
 {
   "hero": {
-    "headline": "We Are Pure Padel",
-    "paragraph": "Pure Padel is Manchester born creating a fun and inclusive foundation for the growth of padel with premium venues throughout the UK.",
+    "headline": "We Are It's Padel",
+    "paragraph": "Where the rallies bring you in, but the people make you stay. Play, connect and feel part of something real",
     "ctaText": "How To Play",
     "ctaLink": "/what-is-padel",
-    "backgroundImage": "https://images.unsplash.com/photo-1622547748225-3fc4abd2cca0?q=80&w=1740&auto=format&fit=crop"
+    "backgroundImage": "/itspadel-gameplay-night.webp"
   },
   "mission": {
-    "headline": "The Pure Padel Mission",
+    "headline": "The It's Padel Mission",
     "paragraph": "Pure Padel is on a journey to help make padel the next generation of racquet sports in the UK. With the aim of building 30 clubs across the UK within 5 years, we are dedicated to providing exceptional facilities, top-notch coaching, and a welcoming atmosphere for players of all levels. Join the hype and experience the passion and excitement of padel like never before.",
     "ctaText": "How To Play",
     "ctaLink": "/what-is-padel",
-    "image": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?q=80&w=1740&auto=format&fit=crop"
+    "image": "/itspadel-gameplay-court.webp"
   },
   "values": {
-    "headline": "Values, The Pure Padel Way!",
-    "paragraph": "For us, padel is more than a sport, it's a community. People are at the heart of what we do. Our vision for Pure Padel is to make the sport more available, accessible and inclusive than any other racquet sport. We want our vibrant and inclusive community to be enjoyed by everybody, regardless of your background. Join the hype at one of our clubs today!",
+    "headline": "Values, The It's Padel Way!",
+    "paragraph": "Padel is a fast-paced and addictive racket sport that combines elements  of tennis and squash. With a smaller court and walls, it’s extremely  easy to pick up! With two clubs built already in the North West and more on the way, Pure Padel will make sure you have bringing the world’s  fastest growing sport to your doorstep!",
     "ctaText": "How To Play",
     "ctaLink": "/what-is-padel",
-    "image": "https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?q=80&w=1740&auto=format&fit=crop"
+    "image": "/itspadel-game-coach.webp"
   },
   "people": {
     "headline": "Meet Our Team"
   },
   "team": [
     {
-      "name": "Sammy Arora",
+      "name": "Nathan Simons",
       "role": "Co-Founder & Managing Director",
-      "image": "https://www.purepadelclubs.co.uk/wp-content/uploads/2024/09/TeamSammyB.jpg"
+      "image": "/itspadel-court-manager.webp"
     },
     {
-      "name": "Lewis Kirk",
+      "name": "Angela Martins",
       "role": "Head of Commercial",
-      "image": "https://www.purepadelclubs.co.uk/wp-content/uploads/2024/09/TeamLewisB.jpg"
+      "image": "/itspadel-head-of-commercial.webp"
     },
     {
-      "name": "Jose Munoz",
+      "name": "Frederick Benson",
       "role": "Regional Manager",
-      "image": "https://www.purepadelclubs.co.uk/wp-content/uploads/2024/09/TeamJoseB.jpg"
-    },
-    {
-      "name": "Andrew Scullion",
-      "role": "Club Manager of Pure Padel Darlington",
-      "image": "https://www.purepadelclubs.co.uk/wp-content/uploads/2025/08/Meet-the-team-initial-design-concepts-1.png"
-    },
-    {
-      "name": "Arielle Chaytow",
-      "role": "Club Manager of Pure Padel Manchester",
-      "image": "https://www.purepadelclubs.co.uk/wp-content/uploads/2025/08/Meet-the-team-initial-design-concepts-3.jpg"
+      "image": "/itspadel-business-officer.webp"
     }
   ],
   "testimonials": [

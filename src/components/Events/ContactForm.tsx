@@ -29,7 +29,7 @@ const ContactForm = () => {
               START YOUR NEXT EVENT<br />
               WITH IT'S PADEL TODAY!
             </h2>
-            <p className="font-inter text-lg text-gray-700">
+            <p className="font-inter text-base text-gray-700">
               We love events! Whether it's Christmas, birthdays, corporate, private, or going big with a full venue hire, we create bespoke experiences that are different.
             </p>
           </div>
@@ -128,7 +128,7 @@ const ContactForm = () => {
 
               <button
                 type="submit"
-                className="w-full bg-[#009FF3] text-white px-6 py-3 font-inter font-medium hover:bg-[#0080cc] transition-colors uppercase"
+                className="w-full rounded-none bg-[#009FF3] text-white px-6 py-3 font-inter font-medium hover:bg-[#0080cc] transition-colors uppercase"
               >
                 Enquire Now
               </button>

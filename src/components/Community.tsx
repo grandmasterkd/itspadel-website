@@ -1,4 +1,5 @@
 import communityData from '../../languages/padelcommunity.json'
+import { Hash, Instagram, Youtube, Twitch } from 'lucide-react'
 
 
 
@@ -84,31 +85,31 @@ export default function Community() {
         </div>
 
         {/* Intro */}
-        <p className="text-center mt-0 mb-0 font-inter text-lg">
+        <p className="text-center mt-0 mb-0 font-inter text-base">
           Follow us on social media
         </p>
 
         {/* Links */}
-        <div className="flex justify-center gap-8 text-lg font-inter">
+        <div className="flex justify-center gap-8">
           {[
-            { label: 'tiktok', href: 'https://www.tiktok.com/@padel' },
-            { label: 'instagram', href: 'https://www.instagram.com/padel' },
-            { label: 'youtube', href: 'https://www.youtube.com/padel' },
-            { label: 'twitch', href: 'https://www.twitch.tv/padel' },
-          ].map(link => (
-            <a
-              key={link.label}
-              href={link.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="relative group"
-            >
-              <span className="transition-colors group-hover:text-[#009FF3]">
-                {link.label}
-              </span>
-              <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#009FF3] transition-all group-hover:w-full" />
-            </a>
-          ))}
+            { label: 'tiktok', href: 'https://www.tiktok.com/@padel', icon: Hash },
+            { label: 'instagram', href: 'https://www.instagram.com/padel', icon: Instagram },
+            { label: 'youtube', href: 'https://www.youtube.com/padel', icon: Youtube },
+            { label: 'twitch', href: 'https://www.twitch.tv/padel', icon: Twitch },
+          ].map(link => {
+            const Icon = link.icon
+            return (
+              <a
+                key={link.label}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-[#009FF3] transition-colors"
+              >
+                <Icon className="w-6 h-6" />
+              </a>
+            )
+          })}
         </div>
 
       </div>

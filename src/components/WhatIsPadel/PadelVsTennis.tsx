@@ -14,7 +14,7 @@ const PadelVsTennis = () => {
             viewport={{ once: true }}
           >
             <img
-              src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=1740&auto=format&fit=crop"
+              src="/itspadel-padel-vs-tennis.webp"
               alt="Padel vs Tennis"
               className="w-full h-96 object-cover rounded-2xl"
             />
@@ -25,10 +25,10 @@ const PadelVsTennis = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <h2 className="font-bison text-4xl md:text-5xl mb-6">
+            <h2 className="font-bison text-4xl md:text-5xl mb-2">
               {whatIsPadelData.padelVsTennis.headline}
             </h2>
-            <p className="font-inter text-lg text-gray-700 mb-8">
+            <p className="font-inter text-base text-black/50 mb-8">
               {whatIsPadelData.padelVsTennis.paragraph}
             </p>
             <Link

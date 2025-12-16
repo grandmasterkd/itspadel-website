@@ -11,7 +11,7 @@ const Description = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <p className="font-inter text-lg text-gray-700 max-w-4xl mx-auto">
+          <p className="font-inter text-base text-gray-700 max-w-4xl mx-auto">
             {eventsData.description.paragraph}
           </p>
         </motion.div>

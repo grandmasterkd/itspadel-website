@@ -16,7 +16,7 @@ const Playtomic = () => {
             <h2 className="font-bison text-4xl md:text-5xl mb-6">
               {coachingData.playtomic.headline}
             </h2>
-            <p className="font-inter text-lg text-gray-700 mb-8">
+            <p className="font-inter text-base text-gray-700 mb-8">
               {coachingData.playtomic.paragraph}
             </p>
             <Link
