@@ -21,13 +21,14 @@ const Services = () => {
               viewport={{ once: true }}
             >
               <img src={service.image} alt={service.headline} className="w-full h-96 object-cover" />
-              <div className="h-full absolute inset-0 bg-gradient-to-b from-black to-transparent group-hover:bg-black/50 transition-colors"></div>
+               <div className="h-full absolute inset-0 bg-gradient-to-t from-black to-transparent group-hover:bg-black/50 transition-colors">
               <div className="absolute bottom-6 left-6 text-white">
                 <h3 className="font-bison text-4xl mb-2">{service.headline}</h3>
                 <p className="font-inter text-sm mb-4 max-w-md text-white">{service.paragraph}</p>
-                <Link to={service.ctaLink} className="text-sm inline-flex items-center bg-white text-[#009FF3] px-4 py-2 font-inter font-medium hover:bg-gray-100 transition-colors">
-                  {service.ctaText} <ChevronRightIcon className="w-4 h-4 ml-2" />
+                <Link to={service.ctaLink} className="text-sm inline-flex items-center bg-white text-[#009FF3] px-4 py-2 font-inter font-medium tracking-tighter hover:bg-gray-100 transition-colors">
+                  {service.ctaText} <ChevronRightIcon className="w-4 h-4 ml-1" />
                 </Link>
+              </div>
               </div>
             </motion.div>
           ))}
@@ -44,13 +45,14 @@ const Services = () => {
               viewport={{ once: true }}
             >
               <img src={service.image} alt={service.headline} className="w-full h-96 object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent group-hover:bg-black/50 transition-colors"></div>
-              <div className="absolute bottom-6 left-6 text-white">
+               <div className="w-full absolute inset-0 bg-gradient-to-t from-black to-transparent group-hover:bg-black/50 transition-colors">
+              <div className="absolute bottom-6 left-6 text-white ">
                 <h3 className="font-bison text-4xl mb-2">{service.headline}</h3>
                 <p className="font-inter text-sm mb-4 max-w-md text-white">{service.paragraph}</p>
-                <Link to={service.ctaLink} className="text-sm inline-flex items-center bg-white text-[#009FF3] px-4 py-2 font-inter font-medium hover:bg-gray-100 transition-colors">
-                  {service.ctaText} <ChevronRightIcon className="w-4 h-4 ml-2" />
+                <Link to={service.ctaLink} className="text-sm inline-flex items-center bg-white text-[#009FF3] px-4 py-2 font-inter font-medium tracking-tighter hover:bg-gray-100 transition-colors">
+                  {service.ctaText} <ChevronRightIcon className="w-4 h-4 ml-1" />
                 </Link>
+              </div>
               </div>
             </motion.div>
           ))}

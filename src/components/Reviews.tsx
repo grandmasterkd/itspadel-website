@@ -51,7 +51,7 @@ const Reviews = () => {
             <p className="font-inter text-white text-base md:text-xl mb-10 max-w-3xl mx-auto">{currentReview.message}</p>
 
             {/* Name */}
-            <p className="font-inter text-lg md:text-xl font-medium">{currentReview.name}</p>
+            <p className="font-inter text-base md:text-xl font-medium">{currentReview.name}</p>
           </motion.div>
         </AnimatePresence>
 

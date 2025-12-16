@@ -14,7 +14,7 @@ const WhatMakesDifferent = () => {
           <h2 className="font-bison text-4xl md:text-5xl mb-6">
             {eventsData.whatMakesDifferent.headline}
           </h2>
-          <p className="font-inter text-lg text-gray-700 max-w-4xl mx-auto">
+          <p className="font-inter text-base text-gray-700 max-w-4xl mx-auto">
             {eventsData.whatMakesDifferent.paragraph}
           </p>
         </motion.div>

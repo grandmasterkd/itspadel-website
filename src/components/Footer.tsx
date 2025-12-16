@@ -36,7 +36,7 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="example@gmail.com"
-                className="w-full px-0 py-3 border-b border-gray-300"
+                className="w-full px-0 py-3 border-b border-gray-300 tracking-tighter text-base"
               />
               <div className="absolute right-3 top-1/2 transform -translate-y-1/2 text-black/50">
                 <ArrowRight className="w-5 h-5" />
@@ -48,7 +48,7 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Column 1 */}
             <div>
-              <h3 className="font-semibold text-gray-900 mb-4">SPORT</h3>
+              <h3 className="font-semibold text-black tracking-tighter mb-4">SPORT</h3>
               <ul className="space-y-2 text-gray-600">
                 <li><a href="/clubs" className="hover:text-[#009FF3]">Locations</a></li>
                 <li><a href="/events" className="hover:text-[#009FF3]">Events</a></li>
@@ -59,7 +59,7 @@ const Footer = () => {
 
             {/* Column 2 */}
             <div>
-              <h3 className="font-semibold text-gray-900 mb-4">RESOURCES</h3>
+              <h3 className="font-semibold text-black tracking-tighter mb-4">RESOURCES</h3>
               <ul className="space-y-2 text-gray-600">
                 <li><a href="#" className="hover:text-[#009FF3]">Padel News</a></li>
                 <li><a href="#" className="hover:text-[#009FF3]">How to book</a></li>
@@ -68,7 +68,7 @@ const Footer = () => {
 
             {/* Column 3 */}
             <div>
-              <h3 className="font-semibold text-gray-900 mb-4">ABOUT</h3>
+              <h3 className="font-semibold text-black tracking-tighter mb-4">ABOUT</h3>
               <ul className="space-y-2 text-gray-600">
                 <li><a href="/about" className="hover:text-[#009FF3]">About Us</a></li>
                 <li><a href="#" className="hover:text-[#009FF3]">Privacy Policy</a></li>

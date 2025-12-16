@@ -44,10 +44,10 @@ const FindYourClub = () => {
                 <img src={club.image} alt={club.name} className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 text-white">
-                  <h3 className="font-bison text-2xl md:text-3xl mb-2">{club.name}</h3>
-                  <div className="flex items-center font-inter text-base md:text-lg">
+                  <h3 className="font-bison text-2xl md:text-3xl mb-1">{club.name}</h3>
+                  <p className="flex items-center font-inter text-base text-white">
                     View Club <ChevronRightIcon className="w-4 h-4 md:w-5 md:h-5 ml-2" />
-                  </div>
+                  </p>
                 </div>
               </div>
             </div>

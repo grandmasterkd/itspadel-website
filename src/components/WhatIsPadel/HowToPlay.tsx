@@ -62,7 +62,7 @@ const HowToPlay = () => {
           {whatIsPadelData.howToPlay.tabs.map((tab: Tab, index: number) => (
             <motion.button
               key={index}
-              className={`px-6 py-3 rounded-full font-inter font-medium ${
+              className={`px-8 py-3 rounded-full font-inter font-medium text-base tracking-tighter ${
                 activeTab === index
                   ? 'bg-white text-[#009FF3]'
                   : 'text-[#777575] bg-transparent'
@@ -101,20 +101,20 @@ const HowToPlay = () => {
                 <div className='h-full flex flex-col items-start justify-between' >
                   <div>
                   <h3 className="font-bison text-5xl mb-1">{content.headline}</h3>
-                  <p className="font-inter text-gray-700 text-base">{content.paragraph}</p>
+                  <p className="font-inter text-black/50 text-base">{content.paragraph}</p>
               </div>
               <div className='w-full' >
                   {isGear && (
                     <div className="mt-6">
                       {Object.values(tab.content as GearContent).map((child, idx: number) => (
-                        <div key={idx} className="border-b border-gray-200 last:border-b-0">
-                          <button
+                        <div key={idx} className="border-b border-gray-200 last:border-b-0 cursor-pointer">
+                          <div
                             onClick={() => setSelectedChild(child)}
-                            className="bg-transparent px-0 hover:none flex items-center gap-2 py-2 text-[#777575] w-full text-left"
+                            className="bg-transparent px-0 hover:none flex items-center gap-2 py-2 uppercase text-[#777575] text-sm w-full text-left tracking-tighter"
                           >
                             <PlusIcon className="w-4 h-4" />
                             {child.headline}
-                          </button>
+                          </div>
                         </div>
                       ))}
                   </div>

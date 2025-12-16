@@ -25,10 +25,10 @@ const PadelVsTennis = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <h2 className="font-bison text-4xl md:text-5xl mb-6">
+            <h2 className="font-bison text-4xl md:text-5xl mb-2">
               {whatIsPadelData.padelVsTennis.headline}
             </h2>
-            <p className="font-inter text-lg text-gray-700 mb-8">
+            <p className="font-inter text-base text-black/50 mb-8">
               {whatIsPadelData.padelVsTennis.paragraph}
             </p>
             <Link

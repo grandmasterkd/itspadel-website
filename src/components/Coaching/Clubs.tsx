@@ -34,7 +34,7 @@ const Clubs = () => {
           viewport={{ once: true }}
         >
           <h2 className="font-bison text-4xl md:text-5xl mb-4">Our Clubs</h2>
-          <p className="font-inter text-lg text-gray-600">Choose your location for coaching</p>
+          <p className="font-inter text-base text-gray-600">Choose your location for coaching</p>
         </motion.div>
 
         <motion.div

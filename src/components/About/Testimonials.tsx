@@ -53,10 +53,10 @@ const Testimonials = () => {
                   <span key={i} className="text-yellow-400 text-xl">★</span>
                 ))}
               </div>
-              <p className="font-inter text-lg text-gray-700 mb-4 italic">
+              <p className="font-inter text-base text-gray-700 mb-4 italic">
                 "{testimonial.quote}"
               </p>
-              <p className="font-bison text-lg text-[#009FF3]">- {testimonial.author}</p>
+              <p className="font-bison text-base text-[#009FF3]">- {testimonial.author}</p>
             </motion.div>
           ))}
         </motion.div>

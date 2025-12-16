@@ -26,7 +26,7 @@ const FastestGrowing = () => {
   return (
     <section className="py-20 px-8 md:px-16 lg:px-32">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 h-full items-start justify-between">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -36,9 +36,10 @@ const FastestGrowing = () => {
             <img
               src={homeData.fastestGrowing.image}
               alt="Padel court"
-              className="w-full h-96 object-cover rounded-2xl"
+              className="w-full h-[450px] object-cover rounded-3xl"
             />
           </motion.div>
+         
           <motion.div
             variants={containerVariants}
             initial="hidden"
@@ -46,19 +47,20 @@ const FastestGrowing = () => {
             viewport={{ once: true }}
           >
             <motion.h2
-              className="font-bison text-4xl md:text-5xl mb-6"
+              className="font-bison text-4xl md:text-5xl mb-2"
               variants={itemVariants}
             >
               {homeData.fastestGrowing.headline}
             </motion.h2>
             <motion.p
-              className="font-inter text-lg text-gray-700 mb-8"
+              className="font-inter text-base text-black/50 mb-8"
               variants={itemVariants}
             >
               {homeData.fastestGrowing.paragraph}
             </motion.p>
+           
             <motion.div
-              className="flex gap-4"
+              className="flex flex-end gap-4"
               variants={itemVariants}
             >
               <Link

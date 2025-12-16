@@ -28,7 +28,12 @@ a:hover {
 
 p {
   color: gray;
-  letter-spacing: -0.03em
+  letter-spacing: -0.05em;
+
+}
+
+li {
+  letter-spacing: -0.05em;
 }
 
 body {
@@ -80,12 +85,45 @@ button:focus-visible {
 
 
 @layer base {
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bison&display=swap');
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/inter/Inter-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/inter/Inter-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/inter/Inter-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
 
 @font-face {
   font-family: 'Bison';
-  src: local('Bison'), url('https://fonts.gstatic.com/s/bison/v1/8QIUdwOP_e9fGpNY.woff2') format('woff2');
+  src: url('/fonts/bison/Bison-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bison';
+  src: url('/fonts/bison/Bison-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bison';
+  src: url('/fonts/bison/Bison-Bold.woff2') format('woff2');
+  font-weight: 700;
   font-display: swap;
 }
 
@@ -152,5 +190,11 @@ button:focus-visible {
   }
   body {
     @apply bg-background text-foreground;
+  }
+  .font-bison {
+    font-weight: 700;
+  }
+  p {
+    @apply tracking-tighter;
   }
 }
