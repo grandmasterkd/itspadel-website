@@ -36,11 +36,11 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="example@gmail.com"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#009FF3] pr-12"
+                className="w-full px-0 py-3 border-b border-gray-300"
               />
-              <button className="absolute right-3 top-1/2 transform -translate-y-1/2 text-[#009FF3]">
+              <div className="absolute right-3 top-1/2 transform -translate-y-1/2 text-black/50">
                 <ArrowRight className="w-5 h-5" />
-              </button>
+              </div>
             </div>
           </div>
 

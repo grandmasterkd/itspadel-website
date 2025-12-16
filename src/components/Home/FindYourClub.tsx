@@ -4,9 +4,9 @@ import { ChevronRightIcon } from '@heroicons/react/24/outline'
 
 const FindYourClub = () => {
   const clubs = [
-    { name: 'Alderley Park', image: 'https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?q=80&w=1740&auto=format&fit=crop' },
-    { name: 'Manchester', image: 'https://images.unsplash.com/photo-1554068865-24cecd4e34b8?q=80&w=1740&auto=format&fit=crop' },
-    { name: 'Stockport', image: 'https://images.unsplash.com/photo-1617883861744-1197c9a3b90b?q=80&w=1740&auto=format&fit=crop' },
+    { name: 'Nottingham', image: '/locations/itspadel-mock-location-nottingham.webp' },
+    { name: 'Birmingham', image: '/locations/itspadel-mock-location-birmingham.webp' },
+    { name: 'Lightwater', image: '/locations/itspadel-mock-location-lightwater.webp' },
     { name: 'North Leeds', image: 'https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?q=80&w=1740&auto=format&fit=crop' },
     { name: 'Darlington', image: 'https://images.unsplash.com/photo-1554068865-24cecd4e34b8?q=80&w=1740&auto=format&fit=crop' }
   ]

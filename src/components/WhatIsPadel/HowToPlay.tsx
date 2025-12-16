@@ -85,7 +85,7 @@ const HowToPlay = () => {
           <img
             src={whatIsPadelData.howToPlay.tabs[activeTab].image}
             alt={whatIsPadelData.howToPlay.tabs[activeTab].title}
-            className="w-full h-full object-cover rounded-3xl"
+            className="w-full h-[450px] object-cover rounded-3xl"
           />
           <div>
             {(() => {

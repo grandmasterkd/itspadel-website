@@ -14,7 +14,7 @@ const PadelVsTennis = () => {
             viewport={{ once: true }}
           >
             <img
-              src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=1740&auto=format&fit=crop"
+              src="/itspadel-padel-vs-tennis.webp"
               alt="Padel vs Tennis"
               className="w-full h-96 object-cover rounded-2xl"
             />
