@@ -13,6 +13,16 @@ const FindYourClub = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [slideWidth, setSlideWidth] = useState(33.33)
+
+  useEffect(() => {
+    const updateWidth = () => {
+      setSlideWidth(window.innerWidth < 768 ? 100 : 33.33)
+    }
+    updateWidth()
+    window.addEventListener('resize', updateWidth)
+    return () => window.removeEventListener('resize', updateWidth)
+  }, [])
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -35,11 +45,11 @@ const FindYourClub = () => {
       <div className="relative overflow-hidden">
         <motion.div
           className="flex"
-          animate={{ x: `-${currentIndex * 33.33}%` }}
+          animate={{ x: `-${currentIndex * slideWidth}%` }}
           transition={{ duration: 0.8, ease: 'easeInOut' }}
         >
           {[...clubs, ...clubs.slice(0, 3)].map((club, index) => (
-            <div key={`${club.name}-${index}`} className="w-1/3 flex-shrink-0 px-2">
+            <div key={`${club.name}-${index}`} className="w-full md:w-1/3 flex-shrink-0 px-2">
               <div className="relative rounded-2xl overflow-hidden cursor-pointer h-80 md:h-96" onClick={handleClubClick}>
                 <img src={club.image} alt={club.name} className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
